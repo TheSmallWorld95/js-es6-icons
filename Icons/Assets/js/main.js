@@ -105,13 +105,14 @@ const icons = [
 	}
 ];
 
+
+
+
 icons.forEach((item) => {
-	console.log(item);
-	// if (item.type == "animal") {
-	// 	$("div.card i").addClass("blue")
-	// } else if (item.type == "vegetable") {
-	// 	$("div.card i").addClass("orange")
-	// } else {
-	// 	$("div.card i").addClass("purple")
-	// }
+	$("div.container").append(`<div class="card">
+		<i class="${item.family} ${item.prefix}${item.name}"></i>
+		<p> ${item.name} </p>
+		</div>
+	`)
+
 });
