@@ -107,7 +107,6 @@ const icons = [
 
 
 
-
 icons.forEach((item) => {
 	$("div.container").append(`<div class="card">
 		<i class="${item.family} ${item.prefix}${item.name}"></i>
